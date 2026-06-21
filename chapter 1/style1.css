@@ -1,0 +1,32 @@
+h1 {
+  color: brown;
+}
+div {
+  background-color: pink;
+}
+#body {
+  background-color: rgba(234, 130, 234, 0.741);
+}
+.heading {
+  color: blueviolet;
+}
+#info {
+  background-color: antiquewhite;
+}
+.yellow {
+  background-color: darkmagenta;
+  color: white;
+  /* this comment and span.yellow did the same work --
+        border:2px solid black; */
+}
+ol,
+li {
+  color: rgb(193, 9, 165);
+}
+span.yellow {
+  border: 2px solid black;
+}
+* {
+  margin:;
+  padding:;
+}
