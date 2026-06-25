@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background color</title>
+    <style>
+      * {
+        margin: 1px;
+        padding: 1px;
+      }
+      .container {
+        height: 500px;
+        background-color: #e442fd9e;
+        border: 2px solid black;
+        background-image: url("sanju\ bhai.jpg");
+        background-repeat: no-repeat;
+        background-size: container;
+      }
+      .subcontainer {
+        height: 100px;
+        background-image: url(sanju\ bhai.jpg);
+        background-position: right bottom; /* check MDN reference for more position ^ */
+        background-size: 100px 100px;
+        background-repeat: no-repeat;
+        border: 2px solid brown;
+        margin: 200px;
+      }
+      /* body{
+            height: 700px;
+            background-image: url("sanju\ bhai.jpg");
+            background-repeat:no-repeat;
+            background-size:contain;
+            
+        } */
+      .attachment {
+        height: 750px;
+        width: 500px;
+        border: 1px solid black;
+        background-image: url(waterfall.jpg);
+        background-size: contain;
+        color: rgb(172, 165, 46);
+        font-size: large;
+        background-attachment: fixed;
+        /* background-attachment: scroll; */
+      }
+      .multiple {
+        height: 300px;
+        background: yellow url(waterfall.jpg) no-repeat scroll center;
+        /* order= color, image, repeat, attchment, position */
+        background-size: contain;
+      }
+      nav {
+        background-color: rgb(40, 193, 34);
+        color: white;
+      }
+      ul {
+        background-color: rgb(31, 31, 116);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat
+      sint hic nisi ab possimus sunt necessitatibus itaque, similique totam
+      sequi consectetur asperiores ex quod quisquam accusamus nostrum ipsum, id
+      consequatur provident, saepe blanditiis rem aut! Blanditiis placeat
+      officiis, nemo velit doloribus, perferendis aliquam quaerat exercitationem
+      voluptatum aut sequi quas assumenda, ex corporis maxime voluptate iste
+      accusamus?
+      <div class="subcontainer">hello</div>
+    </div>
+    <br />
+    <div class="attachment">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat illo
+      corrupti praesentium repellat exercitationem eos nisi libero natus hic
+      nulla blanditiis est doloribus harum pariatur aspernatur aliquid officia
+      ab tempora error, nostrum ad voluptatum laboriosam minus iste. Quidem
+      magnam nemo optio, similique voluptatem molestiae quia fuga quasi magni
+      maiores tempore repellendus dolores! Perspiciatis aliquid enim doloremque
+      quidem, assumenda similique vitae vero nesciunt eveniet dolor mollitia
+      odio ullam obcaecati aspernatur quaerat quis minus numquam, sint quod,
+      iusto ex illum sunt quo tenetur? Fugit, animi facere accusamus tempore
+      nulla minima voluptates recusandae eaque repudiandae consequuntur in dolor
+      sit illum optio ex repellat. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Temporibus, vitae!
+    </div>
+    <div class="multiple">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fuga cum
+      corporis laborum quasi dolor, error quos voluptatum libero delectus quas?
+      Quibusdam reiciendis vitae illum impedit nulla amet at doloribus, pariatur
+      enim facere laudantium perferendis dolore eveniet sequi. Possimus
+      dignissimos natus labore fugiat eligendi voluptate minima nam, at
+      blanditiis iure suscipit, adipisci saepe accusantium sed animi sequi rem
+      aliquid incidunt?
+    </div>
+    <br />
+    <nav>
+      <ul>
+        <li>home</li>
+        <li>address</li>
+        <li>contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>
