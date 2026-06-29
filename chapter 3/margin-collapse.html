@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin collapse</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box1 {
+        background-color: aqua;
+        height: 30px;
+        margin: 30px;
+      }
+      .box2 {
+        background-color: bisque;
+        height: 30px;
+        margin: 50px;
+      }
+      .box3 {
+        background-color: #cfa76b;
+        margin: 30px;
+        height: 150px;
+        width: 1223px;
+        border: 2px solid black;
+      }
+      .box4 {
+        background-color: #619c5b;
+        /* margin: 20px;  margin does not include in the box-sizing:border box and content-box*/
+        height: 10px;
+        width: 100%;
+        padding: 2px;
+        border: 1px solid black;
+        /* comment the box-sizing then see the difference */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci sunt
+      sed veniam! Aut illo officiis eum a itaque, vel doloribus tempore sunt
+      repudiandae, odit corrupti delectus fuga voluptatum nulla?
+    </div>
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+      ex architecto minus quibusdam sequi quod obcaecati, modi molestiae sed
+      maiores itaque saepe odit. Quasi, tempore pariatur! Laudantium labore
+      pariatur eveniet porro eius quisquam assumenda molestias placeat ipsa,
+      numquam, amet consequuntur?
+    </div>
+    <div class="box3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quas
+      rerum nam totam inventore omnis repudiandae provident ducimus possimus?
+      <div class="box4"></div>
+    </div>
+  </body>
+</html>
