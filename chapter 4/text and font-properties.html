@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text and font properties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Chewy&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .textalign {
+        background-color: aquamarine;
+        color: black;
+        height: 100px;
+        width: 350px;
+        text-align: center;
+        display: inline-block;
+      }
+      #decoration {
+        background-color: blueviolet;
+        color: rgb(12, 13, 13);
+        height: 100px;
+        width: 350px;
+        /* comment the all text decoration properties except the one you want to execute otherwise only the last one will execute*/
+        text-decoration: yellow wavy underline;
+        text-decoration: yellow wavy overline;
+        text-decoration: yellow wavy line-through;
+        text-decoration: dotted underline;
+        text-decoration: dotted line-through;
+        text-decoration: dotted overline;
+        padding: 10px;
+        display: inline-block;
+      }
+      .texttransform {
+        background-color: darksalmon;
+        color: black;
+        height: 100px;
+        width: 350px;
+        padding: 20px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-transform: lowercase;
+        text-transform: capitalize;
+      }
+      .line-height {
+        border: 2px double black;
+        line-height: 1.7;
+        line-height: 1;
+        line-height: 2.3;
+      }
+      .font {
+        background-color: aqua;
+        color: black;
+        border: 1px solid brown;
+        height: 100px;
+        width: 1250px;
+        font-size: smaller;
+        font-size: larger;
+        font-size: 30px;
+        font-family: cursive;
+        /* line-height: 50px; */
+      }
+      .font2 {
+        border: 2px solid grey;
+        border-radius: 50px;
+        padding: 20px;
+        height: 100px;
+        /* by using the google font we get this font by copy the link */
+        font-family: "Chewy", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 32px;
+        background-color: antiquewhite;
+      }
+      h2{
+        font-size: 44px;
+        font-style:oblique;
+        font-variant: small-caps;
+      }
+      .otherfont{
+        font-style:italic;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="textalign">hello everyone.</p>
+    <p id="decoration">i am Rupa chauhan</p>
+    <p class="texttransform">i am pursuing b.tech fron cse</p>
+    <p class="line-height">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae
+      ad illo aspernatur, delectus minima, amet fugiat eligendi sunt ab
+      inventore quasi a perspiciatis explicabo. Culpa explicabo, hic ex
+      accusantium tempore adipisci, sint ut sequi recusandae fuga omnis iusto
+      expedita aspernatur necessitatibus ad distinctio repudiandae excepturi.
+      Nesciunt quibusdam doloribus quas!
+    </p>
+    <p class="font">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, voluptates
+      aut. Modi cum fugit, nisi voluptatem non repellendus quam esse.
+    </p>
+    <p class="font2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem,
+      possimus.
+    </p>
+    <h2>this is me and i am fine</h2>
+    <p class="otherfont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime soluta qui consequatur neque pariatur nostrum corrupti totam minus tempore facere.
+    </p>
+  </body>
+</html>

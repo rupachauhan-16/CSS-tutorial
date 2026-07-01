@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font and display</title>
+    <style>
+      .box1 {
+        width: 200px; /*width and height is not of any use while using the inline display property */
+        height: 300px;
+        background-color: #931c1c;
+        display: inline;
+      }
+      .box2 {
+        width: 200px; /*width and height is not of any use while using the inline display property */
+        height: 300px;
+        background-color: #804edc;
+        display: inline;
+        /* padding: 30px; */ /* top/bottom padding and margin are not allowed in inline display property */
+      }
+      .box3 {
+        background-color: rgb(59, 165, 214);
+        display: inline-block;
+        height: 150px;
+        width: 250px;
+        padding: 35px;
+        margin: 10px;
+      }
+      .box4 {
+        background-color: goldenrod;
+        display: inline-block;
+        height: 150px;
+        width: 250px;
+        padding: 35px;
+        margin: 10px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <br />
+    <div class="box3">Lorem ipsum dolor sit amet</div>
+    <div class="box4">Lorem ipsum dolor sit amet</div>
+  </body>
+</html>
