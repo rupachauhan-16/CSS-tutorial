@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sise, position and list</title>
+    <link rel="shortcut icon" href="img.png" type="image/x-icon">
+    <style>
+        .container{
+            font-size: 34px;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .box1{
+            font-size: 1em;    /*parent(.container) k size ka 1 guna*/
+            font-size: 2em;   /*parent(.container) k size ka 2 guna*/
+            border: 2px solid black;
+        }
+        html{
+            /* font-size: 10px; */   /*when you uncomment the font-size of html tag the size of box2 will change & now it take the default size of html that is 12px*/
+        }
+        .box2{
+            font-size: 3rem;  /* html tag k size ka 3 guna*/
+            background-color: aqua;
+            border: 2px solid rgb(189, 58, 58);
+        }
+        .container2{
+            text-align:center;
+        }
+        .box3{
+            background-color: bisque;
+            /* width: 50vw;
+           height: 50vh; */
+           width: 60vh;
+           height: 50vw;
+        }
+        .parent{
+            background-color: blueviolet;
+            height: 400px;
+            width: 50vw;
+        }
+        .child{
+            background-color: aquamarine;
+            width:50%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>this is a paragraph</p>
+        <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ea voluptatem ex! Blanditiis laboriosam repudiandae, accusantium reiciendis amet dolores tempore ipsa aliquid consectetur, recusandae non praesentium maxime dolorum alias, magni quasi! Ipsa nostrum blanditiis molestiae consequatur laudantium qui.</div>
+    </div>
+    <div class="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, sapiente?</div>
+    <div class="container2">
+        <p>this is a second paragraph</p>
+        <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dignissimos dolor, itaque debitis velit reprehenderit.</div>
+    </div>
+    <div class="parent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptates.
+        <div class="child">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, eveniet.</div>
+    </div>
+</body>
+</html>
