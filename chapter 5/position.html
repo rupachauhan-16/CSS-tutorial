@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>size, position and lists</title>
+    <style>
+      li {
+        /* display: inline; */
+        margin-left: 100px;
+        /* list-style: square; */
+        /* list-style: circle; */
+        list-style:decimal-leading-zero;
+      }
+      a {
+        color: white;
+      }
+      header {
+        background-color: black;
+        color: rgb(169, 199, 222);
+        height: 56px;
+      }
+      p {
+        text-align: center;
+        border: 2px solid red;
+      }
+      .container {
+        background-color: aquamarine;
+        /* text-transform: capitalize; */
+        /* text-align: center; */
+        height: 300vh;
+        width: 50vw;
+        margin: auto;
+        position: relative;   /* remove this to see the difference in absolute box */
+      }
+      .box1 {
+        background-color: bisque;
+        border: 1px solid black;
+        height: 50px;
+        width: 150px;
+        position: static;
+        top: 30px;     /* top has no effect bcz we set the position as static*/
+      }
+      .box2{
+        background-color: bisque;
+        border: 1px solid black;
+        height: 50px;
+        width: 150px;
+        position: relative;
+        /* top: 30px; */           /* uncooment these and see the difference it is very intresting*/
+        /* bottom: 30px; */
+        /* left: 40px; */
+        right: 30px;
+      }
+      .box3{
+        background-color: bisque;
+        border: 1px solid black;
+        height: 50px;
+        width: 150px;
+        position: absolute;      /*give position according to the first non static element*/
+        /* top: 0; */
+        /* bottom: 0; */
+        /* left: 0; */
+        right: 200px;
+      }
+      .box4{
+        background-color: bisque;
+        border: 1px solid black;
+        height: 50px;
+        width: 150px;
+        position:fixed;  
+        right: 0;              /* give the position according to the browser window*/
+      }
+      .box5{
+        background-color: bisque;
+        border: 1px solid black;
+        height: 50px;
+        width: 150px;
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ol type="a">
+          <li><a href="#">HOME</a> home</li>
+          <li><a href="#">CONTACT</a> contact</li>
+          <li><a href="#">ADDRESS</a> address</li>
+        </ol>
+      </nav>
+    </header>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        adipisci sed nihil totam nulla est vel deleniti. Quia sunt voluptate ut
+        reprehenderit molestias, sit saepe enim aut accusamus nulla fugiat?
+      </p>
+      <div class="box1">static</div>
+      <div class="box2">relative</div>
+      <div class="box3">absolute</div>
+      <div class="box4">fixed</div>
+      <div class="box5">sticky</div>
+    </div>
+    <ul>
+      <li>whatsapp</li>
+      <li>contact</li>
+      <li>insta</li>
+    </ul>
+  </body>
+</html>
