@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing color acc. to device size</title>
+    <style>
+        .container1{
+            background-color:rgb(192, 73, 73);
+            border: 2px solid black;
+            height: 15vh;
+              margin: 5px;
+        }
+         .container2{
+            background-color:rgb(192, 73, 73);
+            border: 2px solid black;
+            height: 15vh;
+            margin: 5px;
+        }
+        body{
+            background-color:bisque;
+        }
+        @media screen and (max-width: 1200px){
+            .container1{
+            background-color: aquamarine;
+            border: 2px dotted black;
+            border-radius: 8px;
+            height: 20vh;
+              margin: 1px;
+        }
+         .container2{
+           background-color: aquamarine;
+            border: 2px dotted black;
+             border-radius: 8px;
+            height: 20vh;
+            margin: 1px;
+        }
+        body{
+            background-color:rgb(168, 123, 67);
+        }
+    }
+     @media screen and (max-width: 800px){
+            .container1{
+            background-color: aquamarine;
+            border: 2px dotted black;
+            border-radius: 8px;
+            height: 20vh;
+              margin: 1px;
+        }
+         .container2{
+           background-color: aquamarine;
+            border: 2px dotted black;
+             border-radius: 8px;
+            height: 20vh;
+            margin: 1px;
+        }
+        body{
+            background-color:rgb(98, 92, 85);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, excepturi?
+    </div>
+    <div class="container2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste suscipit, excepturi at, quidem exercitationem sed eaque reiciendis consequuntur a quibusdam veniam consectetur asperiores, esse saepe tenetur. Saepe eos deserunt quaerat.
+    </div>
+</body>
+</html>
